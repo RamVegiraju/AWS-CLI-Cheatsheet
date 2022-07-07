@@ -12,3 +12,7 @@ aws s3 cp originals3path news3path
 
 #local file to s3
 aws s3 cp test.txt s3://mybucket/test2.txt
+
+
+#remove all objects from a subfolder
+aws s3 rm s3://bucket/key/ --recursive
