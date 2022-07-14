@@ -8,6 +8,9 @@ aws lambda invoke --function-name sampleFunction output.txt
 aws lambda create-function --function-name "lambda-function name" --role "Insert Lambda Role ARN" 
 --runtime python3.9 --zip-file "Zip file with code" --handler "File with handler func"
 
+#Creating Lambda function with custom image from ECR
+aws lambda create-function --function-name "function name" --role "Insert Lambda Role ARN" --package-type Image --code ImageUri="Enter Image URI"
+
 #Adding a function URL to existing function
 aws lambda create-function-url-config --function-name "function name" --auth-type "NONE"
 
