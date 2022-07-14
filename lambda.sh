@@ -5,7 +5,7 @@ aws lambda list-functions --region us-east-1
 aws lambda invoke --function-name sampleFunction output.txt
 
 #Creating a Lambda function with zip-file
-aws lambda create-function --function-name <<func name>> --role <<Insert Lambda Role ARN>> 
+aws lambda create-function --function-name <<lambda-function name>> --role <<Insert Lambda Role ARN>> 
 --runtime python3.9 --zip-file <<Zip file with code>> --handler <<File with handler func>>
 
 #Adding a function URL to existing function
