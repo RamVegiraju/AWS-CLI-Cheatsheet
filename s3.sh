@@ -16,3 +16,6 @@ aws s3 cp test.txt s3://mybucket/test2.txt
 
 #remove all objects from a subfolder
 aws s3 rm s3://bucket/key/ --recursive
+
+#list s3 objects in a bucket
+aws s3 ls "s3://MyBucket" --summarize
