@@ -19,3 +19,6 @@ aws s3 rm s3://bucket/key/ --recursive
 
 #list s3 objects in a bucket
 aws s3 ls "s3://MyBucket" --summarize
+
+#copy local directory with all subdirectories to S3
+aws s3 sync <folder> s3://<bucket-name>/<folder>
